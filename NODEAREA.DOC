@@ -1,0 +1,52 @@
+
+                NodeArea - Written by Fredric L. Rice
+                   The Skeptic Tank, December 1994
+                      1:102/890.0 (818) 335-9601
+
+This program will take the area code you're interested in, the
+nodelist file you wish to scan, and produce a report on the nodelist
+entries in that area code, sorted by the city.  It is useful for
+offering individuals a list of FidoNet systems which are in a
+particular area code so that they might find systems which are local
+to them.
+
+Entries which have duplicate phone numbers are excluded from the
+report and the first occurance of the phone number entry is reported.
+Entries with the CDN nodelist flags are excluded from the list.
+
+The command-line argument looks like this:
+
+        NodeArea {area code} {nodelist file}
+
+The output is placed into the NODEAREA.OUT report file.
+
+The program exits with an ERRORLEVEL value:
+
+                No_Problem                      0
+
+        There was no problem and the program terminated normally.
+
+                Operator_Aborted                1
+
+        The operator hit [ESCAPE] while the program was searching.
+
+                No_AreaCode_Argument            10
+
+        The command-line area code argument is missing.
+
+                AreaCode_Is_Invalid             11
+
+        The area code looks bad.  It needs a three digit number.
+
+                Cant_Find_Nodelist_File         12
+
+        The nodelist file offered couldn't be found.
+
+                Cant_Create_Report_File         13
+
+        The NODEAREA.OUT file couldn't be created.
+
+                No_Memory                       14
+
+        The program simply ran out of memory.
+
