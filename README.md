@@ -1,0 +1,2 @@
+# NODEAREA-ANCIENT
+FidoNet BBS, This program will take the area code you're interested in, the node list file you wish to scan, and produce a report on the node list entries in that area code, sorted by the city.  It is useful for offering individuals a list of FidoNet systems which are in a particular area code so that they might find systems which are local to them. The original code was written in C however I can't find it, this is the ancient 8086 executable.
